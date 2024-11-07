@@ -1,17 +1,20 @@
+<?php
+require '../config/app.php';
+?>
 <!DOCTYPE html>
 <html lang="sw">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jisajili - ESHOD & B SECURITY COMPANY LIMITED</title>
+    <title>Jisajili - <?php echo APP_NAME; ?></title>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
 <body>
 
 <div class="register-container">
-    <h2>Jisajili na ESHOD & B SECURITY</h2>
+    <h2>Jisajili na <?php echo APP_NAME; ?></h2>
     <p>Tafadhali jaza taarifa zako ili kujiandikisha kama mtumiaji wa tovuti yetu.</p>
-    <form action="process_register.php" method="POST">
+    <form action="" method="POST">
         <label for="username">Jina la Mtumiaji:</label>
         <input type="text" id="username" name="username" required>
 
