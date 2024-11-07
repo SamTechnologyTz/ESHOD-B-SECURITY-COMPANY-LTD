@@ -637,7 +637,7 @@ allows it to gain customer insights through data analysis.
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Our-Compnay</span></strong>. All Rights Reserved
+        &copy; Copyright <strong><span><?php echo APP_NAME; ?></span></strong>. All Rights Reserved
       </div>
       
     </div>
