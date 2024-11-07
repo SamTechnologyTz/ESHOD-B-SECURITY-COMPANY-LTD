@@ -1,3 +1,4 @@
+<?php
 header('Content-Type: application/json');
 require '../config/database.php';
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
@@ -24,5 +25,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    $stmt->execute();
    $jina_result = $stmt->get_result();
 
-   if ()
+   if ($jina_result === 1) {
+      echo json_encode(['message' => 'This username is already taken']);
+      exit;
+   } else {
+      $stmt = $unga->prepare("INSERT INTO `users` WHERE (jina, pepe, msimbo) VALUES (?, ?, ?)");
+      $stmt->bind_param('sss', $jina, $pepe, $msimbo);
+   }
 }
+?>
