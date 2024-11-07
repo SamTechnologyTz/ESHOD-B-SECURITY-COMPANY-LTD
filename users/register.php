@@ -31,7 +31,7 @@ require '../config/app.php';
         <p>Umesajiliwa tayari? <a href="login.php">Ingia hapa</a>.</p>
     </form>
 </div>
-
+<script src="../application/users.js"></script>
 </body>
 </html>
 
