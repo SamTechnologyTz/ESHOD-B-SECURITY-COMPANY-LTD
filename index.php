@@ -1,3 +1,6 @@
+<?php
+require 'config/app.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,7 +8,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Our-Compnay Associate</title>
+  <title>home | <?php echo APP_NAME; ?></title>
   <meta name="author" content="Velile Vamba">
   <meta content="" name="lorem100">
   <meta content="" name="keywords">
