@@ -1,5 +1,5 @@
 <?php
-
+require '../Controller/Auth_user.php';
 ?>
 <!DOCTYPE html>
 <html lang="sw">
