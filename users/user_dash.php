@@ -1,5 +1,6 @@
 <?php
-
+require '../Controller/';
+require '../config/app.php';
 ?>
 <!DOCTYPE html>
 <html lang="sw">
