@@ -29,14 +29,14 @@ require '../config/app.php';
     <!-- Main Content -->
     <div class="main-content">
         <header>
-            <h1>Karibu, [Jina la Mtumiaji]</h1>
+            <h1>Karibu, <span id="user-name"></span></h1>
             <p>Hapa unaweza kuona taarifa zako na kudhibiti akaunti yako.</p>
         </header>
 
         <section class="overview">
             <div class="card">
                 <h3>Maombi Yako ya Kazi</h3>
-                <p>Jumla ya Maombi: 5</p>
+                <p>Jumla ya Maombi: <span id="maombi-jumla"></span></p>
             </div>
             <div class="card">
                 <h3>Huduma za Kampuni</h3>
@@ -44,7 +44,7 @@ require '../config/app.php';
             </div>
             <div class="card">
                 <h3>Update za Nafasi za Kazi</h3>
-                <p>Nafasi mpya: 3</p>
+                <p>Nafasi mpya: <span id="nafasi-mpya"></span></p>
             </div>
         </section>
     </div>
