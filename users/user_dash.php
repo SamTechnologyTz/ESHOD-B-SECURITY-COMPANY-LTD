@@ -1,5 +1,5 @@
 <?php
-require '../Controller/';
+require '../Controller/Auth_user.php';
 require '../config/app.php';
 ?>
 <!DOCTYPE html>
@@ -7,7 +7,7 @@ require '../config/app.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dashboard - ESHOD & B SECURITY</title>
+    <title>Dashboard - <?php echo APP_NAME; ?></title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
