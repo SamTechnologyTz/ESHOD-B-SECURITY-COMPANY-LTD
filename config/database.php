@@ -2,6 +2,6 @@
 $unga = new mysqli('localhost', 'root', '', 'eshod');
 
 if (!$unga) {
-  die('connection fail '. mysqli_error());
+  die(json_encode('message' => 'no database connection'));
 }
 ?>
