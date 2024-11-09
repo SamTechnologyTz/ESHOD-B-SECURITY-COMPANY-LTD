@@ -27,7 +27,7 @@ require '../config/app.php';
         <label for="confirm_password">Thibitisha Nenosiri:</label>
         <input type="password" id="confirm_password" name="confirm_password" required>
 
-        <button type="submit">Jisajili</button>
+        <button type="submit" onclick="user_register()">Jisajili</button>
         <p>Umesajiliwa tayari? <a href="login.php">Ingia hapa</a>.</p>
     </form>
 </div>
