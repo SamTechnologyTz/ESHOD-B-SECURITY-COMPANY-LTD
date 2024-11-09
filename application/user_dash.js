@@ -12,7 +12,7 @@ setInterval(() => {
     alert(JSON.stringify(data));
   })
   .then((error) => {
-    conso.log
+    console.log(`Error: ${error}`)
   })
 
 }, 500)
