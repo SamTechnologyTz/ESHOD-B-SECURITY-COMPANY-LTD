@@ -21,7 +21,7 @@ require '../config/app.php';
         <label for="password">Nenosiri:</label>
         <input type="password" id="password" name="password" required>
 
-        <button type="submit">Ingia</button>
+        <button type="submit" onclick="user_login()">Ingia</button>
         <p>Hujaandikishwa? <a href="register.php">Jisajili hapa</a>.</p>
     </form>
 </div>
