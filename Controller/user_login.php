@@ -1,6 +1,7 @@
 <?php
 header('Content-Type: application/json');
 require '../config/database.php';
+require 'kichujio.php';
 if ($_SERVER['REQUEST_METHODE'] === 'POST') {
   $data = json_decode(file_get_contents('php/input'), true);
 
