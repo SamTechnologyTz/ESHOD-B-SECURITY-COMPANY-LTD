@@ -1,6 +1,8 @@
 <?php
 header('Content-Type: application/json');
 require '../config/database.php';
+require 'chujio.php';
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
    header("Original-Server: " . $_SERVER['SERVER_NAME']);
    $request_ip = $SERVER['SERVER_ADDR'];
@@ -11,15 +13,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       exit;
    }
 
-   function hakiki($data) {
-      $data = trim($data);
-      $data = stripslahes($data);
-      $data	= htmlspacialchars($data);
-      return $data;
-   }
+   $name = new Hakikisha($data['name']);
+   $email = new Hakikisha($data['email']);
    
-   $jina = mysql_real_escape_string($unga, hakiki($data['name']));
-   $pepe = mysql_real_escape_string($unga, hakiki($data['email']));
+   $jina = mysql_real_escape_string($unga, $name->hakiki());
+   $pepe = mysql_real_escape_string($unga, $email->hakiki());
    $msimbo = mysql_real_escape_string($unga, password_hash($data['msimbo']));
   
    $stmt = $unga->prepare("SELECT * FROM `users` WHERE jina = ? ");
