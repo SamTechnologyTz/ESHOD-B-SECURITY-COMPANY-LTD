@@ -21,7 +21,7 @@ require '../Controller/Auth_user.php';
             <input type="email" id="email" name="email" required>
 
             <label for="phone">Namba ya Simu:</label>
-            <input type="text" id="phone" name="phone" required>
+            <input type="tel" id="phone" name="phone" required>
 
             <label for="position">Nafasi Unayoomba:</label>
             <input type="text" id="position" name="position" required>
@@ -32,7 +32,7 @@ require '../Controller/Auth_user.php';
             <label for="cover_letter">Barua ya Maelezo:</label>
             <textarea id="cover_letter" name="cover_letter" rows="5" required></textarea>
 
-            <button type="submit" class="btn-submit">Tuma Maombi</button>
+            <button type="submit" class="btn-submit" id="tuma-ombi">Tuma Maombi</button>
         </form>
     </div>
 </body>
