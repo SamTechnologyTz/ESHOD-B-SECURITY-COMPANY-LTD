@@ -1,15 +1,15 @@
 setInterval(() => {
-  const jina = document.getElementById('jina').value;
-  fetch('http:localhost/somahii/Controller/user_dash.php', {
+  const user_id = document.getElementById('uid').value;
+  fetch('http://localhost/somahii/Controller/user_dash.php', {
     method: 'POST',
     header: {
       'Content-Type: application'
     },
-    body: JSON.stringify( name: jina )
+    body: JSON.stringify( uid: user_id )
   })
   .then((response) = response.json())
   .then((data) => {
-    alert(JSON.stringify(data));
+    document.getElementById().innerTEXT=JSON.stringify(data.name);
   })
   .then((error) => {
     console.log(`Error: ${error}`)
