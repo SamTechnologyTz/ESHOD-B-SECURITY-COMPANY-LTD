@@ -4,7 +4,7 @@ function user_login() {
   const pass = document.getElementById('email').value;
   const password = document.getElementById('password').value;
 
-  fetch('https://localhost/somahii/Controller/user_login.php', {
+  fetch('https://eshod-security-company-ltd.koyeb.app/Controller/user_login.php', {
     method: 'post',
     headers: {
       'Content-Type: application/json'
@@ -27,7 +27,7 @@ function user_register() {
   const pepe = document.getElementById('email').value;
   const msimbo = document.getElementById('password').value;
 
-  fetch('https://localhost/somahii/Controller/user_register.php', {
+  fetch('https://eshod-security-company-ltd.koyeb.app/Controller/user_register.php', {
     method: 'post',
     headers: {
       'Content-Type: application/json'
