@@ -1,16 +1,18 @@
 <?php
-class hikikisha () {
-  public $data;
+class Hikisha {
+    public $data;
 
-  public function ___constractor($data) {
-    $this->data = $data;
-  }
+    // Constructor
+    public function __construct($data) {
+        $this->data = $data;
+    }
 
-  public function hakiki($this->data) {
-    $this->data = trim($this->data);
-    $this->data = stripslashes($this->data);
-    $this->data = htmlspacialchars($this->data);
-    return $this->data;
-  }
+    // Method to validate data
+    public function hakiki() {
+        $this->data = trim($this->data);
+        $this->data = stripslashes($this->data);
+        $this->data = htmlspecialchars($this->data);
+        return $this->data;
+    }
 }
 ?>
