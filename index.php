@@ -629,7 +629,8 @@ allows it to gain customer insights through data analysis.
    
     <!-- ======= Map Section ======= -->
     <section class="map">
-<iframe src="https://maps.google.com/maps?q=Government%20Ave,%20Pretoria,%200002&t=&z=13&ie=UTF8&iwloc=&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>	</section><!-- End Map Section -->
+        <iframe src="https://maps.google.com/maps?q=Government%20Ave,%20Pretoria,%200002&t=&z=13&ie=UTF8&iwloc=&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>	
+    </section><!-- End Map Section -->
 
   </main><!-- End #main -->
 
@@ -637,7 +638,9 @@ allows it to gain customer insights through data analysis.
   <footer id="footer">
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span><?php echo APP_NAME; ?></span></strong>. All Rights Reserved
+          <?php echo DEV; ?>
+	      <br>
+        2023&copy; - <?php echo date('Y'); ?>&copy; Copyright <strong><span><?php echo APP_NAME; ?></span></strong>. All Rights Reserved
       </div>
       
     </div>
