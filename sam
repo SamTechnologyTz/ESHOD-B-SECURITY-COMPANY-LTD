@@ -92,9 +92,9 @@ function installer() {
 APP_NAME=SAM OCHU
 APP_ENV=loacal
 APP_KEY='.$app_key.'
+APP_URL=http://localhost:8080
 
 #DATABASE INFO
-#USE MYSQL OR SQLITE DATABSE
 DATABASE=mysql 
 DB_HOST=127.0.0.1
 DB_NAME=sam
@@ -114,8 +114,7 @@ DEV=SAM TECHNOLOGY
      ---------------------------------
     ';
     
-    // exec("composer init");
-    // exec("composer install");
+    exec("composer install");
     echo '
     
     
@@ -150,11 +149,11 @@ class '.$name.'Controller
         //  
     } 
 
-    public function readone($session_id) 
+    public function readone($id) 
     { 
         $'.$name.' = new '.$name.'(); 
 
-        $result = $'.$name.'->readone($session_id);
+        $result = $'.$name.'->readone($id);
  
         if ($result["status"] == "fail") { 
             return $result["message"]; 
@@ -193,7 +192,7 @@ class '.$name.'Controller
         $item2 = $request["item2"];
         $item3 = $request["item3"];
 
-        // $result = $'.$name.'->update($item1, $item2, $item3);
+        $result = $'.$name.'->update($item1, $item2, $item3);
 
         if ($result["status"] == "success") {
            return [
