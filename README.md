@@ -76,6 +76,8 @@ kibalanga/
 ├── public/
 ├── vendor/
 ├── views/
+│   ├── about.sam.php
+│   └── welcome.sam.php
 ├── .env
 ├── .env.example
 ├── index.php
