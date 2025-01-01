@@ -73,6 +73,7 @@ kibalanga/
 │   ├── Controller/
 │   └── Model/
 ├── config/
+├── core/
 ├── public/
 ├── vendor/
 ├── views/
